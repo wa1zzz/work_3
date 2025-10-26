@@ -39,16 +39,3 @@ void heapSort(std::vector<int>& arr) {
         heapify(arr, i, 0);
     }
 }
-
-// Пример использования
-int main() {
-    std::vector<int> arr = {64, 34, 25, 12, 22, 11, 90};
-    heapSort(arr);
-    
-    std::cout << "Отсортированный массив: ";
-    for (int num : arr) {
-        std::cout << num << " ";
-    }
-    return 0;
-}
-// Отсортированный массив: 11 12 22 25 34 64 90 
