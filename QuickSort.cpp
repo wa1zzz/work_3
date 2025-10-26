@@ -34,16 +34,3 @@ void quickSort(std::vector<int>& arr, int low, int high) {
 void quickSort(std::vector<int>& arr) {
     quickSort(arr, 0, arr.size() - 1);
 }
-
-// Пример использования
-int main() {
-    std::vector<int> arr = {64, 34, 25, 12, 22, 11, 90};
-    quickSort(arr);
-    
-    std::cout << "Отсортированный массив: ";
-    for (int num : arr) {
-        std::cout << num << " ";
-    }
-    return 0;
-}
-// Отсортированный массив: 11 12 22 25 34 64 90 
